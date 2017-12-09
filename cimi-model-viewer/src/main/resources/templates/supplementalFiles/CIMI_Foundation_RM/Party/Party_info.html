@@ -22,15 +22,13 @@ if (location.href.indexOf('is-external=true') == -1) {
     <ul class="navList" title="Navigation">
         <li class="navBarCell1Rev"><a href="../../overview-summary.html">Back to overview</a></li>
     </ul>
-    <div class="aboutLanguage"><em><strong>HL7 CIMI Reference Model Version 0.0.2</strong></em><br>CIMI_Foundation_RM.Party</div>
+    <div class="aboutLanguage"><em><strong>HL7 CIMI Foundation Reference Module Version 0.0.4</strong></em><br>CIMI_Foundation_RM.Party</div>
 </div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="contentContainer">
-    <h2 title="Overview">Overview of the Party Package</h2>
-    <p>The Foundation Party package introduces the PARTICIPATION, PARTY, PARTY_RELATIONSHIP, BASE_ROLE, and BASE_ACTOR classes. These
-    classes are used to represent the participation of entities in clinical activities and the roles assumed during such participations.
-    For instance, a person (Entity) may participate (PARTICIPATION) in a clinical activity (Statement Act Topic) as a patient (ROLE)</p>
-    <img src="../../img/Class_Diagram__Party__PartyCore.jpg" width="600">
+    <h2 title="Overview">Overview of the CIMI Foundation Reference Model Module Party Package</h2>
+    <p>The Party package introduces four classes: Party, Role, Entity and PartyAssociation. Party is an abstract type that can represent either a real-world entity (e.g., a person) or a role (e.g., a patient role). Parties are associated to either other parties or to activities using the PartyAssociation class. The target of an association is always a party.</p>
+    <img src="../../img/class__Party__Foundation_Party.jpg" width="600">
 </div>
 </body>
 </html>

@@ -2,7 +2,7 @@ package org.opencimi.cimidoc;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.openehr.bmm.rm_access.ReferenceModelAccess;
+import org.openehr.bmm.rmaccess.ReferenceModelAccess;
 import org.openehr.docgen.DocumentGenerator;
 
 import java.io.File;
@@ -41,8 +41,7 @@ public class DocumentGeneratorTest {
             path = path.substring(0, path.lastIndexOf('/'));
             schemaDirectories.add(path);
             access = new ReferenceModelAccess();
-            access.setSchemaDirectories(schemaDirectories);
-            access.initializeAll();
+            access.initializeAll(schemaDirectories);
         } catch(Exception e) {
             e.printStackTrace();
             fail("Error initializing test");
@@ -50,13 +49,13 @@ public class DocumentGeneratorTest {
     }
     @Test
     public void generateDocument() throws Exception {
-        assertNotNull(access.getValidModels().get("cimi_rm_clinical_0.0.2".toUpperCase()));
+        assertNotNull(access.getValidModels().get("cimi_rm_clinical_0.0.4"));
         DocumentGenerator generator = new DocumentGenerator();
         File file = new File(DocumentGeneratorTest.class.getResource("/templates/").getFile());
         assertTrue(file.isDirectory());
         generator.configure(file);
-        generator.setOutputDirectory("/Users/cnanjo/work/temp/cimi_doc");
-        generator.generateDocument(access.getValidModels().get("cimi_rm_clinical_0.0.2".toUpperCase()));
+        generator.setOutputDirectory("/Users/cnanjo/work/Modeling/cimi/docs/cimi_doc");
+        generator.generateDocument(access.getValidModels().get("cimi_rm_clinical_0.0.4"));
     }
 
 }

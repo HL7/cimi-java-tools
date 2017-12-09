@@ -13,9 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.openehr</groupId>
+            <groupId>com.nedap.healthcare.archie</groupId>
             <artifactId>modeldoc</artifactId>
-            <version>${org.openehr.java.model.stack}</version>
+            <version>0.4.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
