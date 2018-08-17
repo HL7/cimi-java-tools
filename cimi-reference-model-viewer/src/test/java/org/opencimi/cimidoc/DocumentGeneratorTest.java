@@ -51,13 +51,13 @@ public class DocumentGeneratorTest {
     }
     @Test
     public void generateDocument() throws Exception {
-        assertNotNull(access.getValidModels().get("cimi_rm_clinical_0.0.4"));
+        assertNotNull(access.getValidModels().get("cimi_rm_clinical_0.0.6"));
         DocumentGenerator generator = new DocumentGenerator();
         File file = new File(DocumentGeneratorTest.class.getResource("/templates/").getFile());
         assertTrue(file.isDirectory());
         generator.configure(file);
         generator.setOutputDirectory("/Users/cnanjo/work/Modeling/cimi/docs/cimi_doc");
-        BmmModel model = access.getValidModels().get("cimi_rm_clinical_0.0.5");
+        BmmModel model = access.getValidModels().get("cimi_rm_clinical_0.0.6");
         List<Boolean> fixesNeeded = new ArrayList<>();
         model.getClassDefinitions().values().forEach(bmmClass -> {
             if(StringUtils.isBlank(bmmClass.getDocumentation())) {

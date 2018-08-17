@@ -32,7 +32,7 @@
             <li><a href="../../../help-doc.html">Help</a></li>
             -->
         </ul>
-        <div class="aboutLanguage"><em><strong>HL7 CIMI Reference Model Version 0.0.2</strong></em></div>
+        <div class="aboutLanguage"><em><strong>HL7 CIMI Reference Model Version 0.0.6</strong></em></div>
     </div>
     <div class="subNav">
     <!-- ========= END OF TOP NAVBAR ========= -->

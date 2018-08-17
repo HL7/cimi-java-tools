@@ -3,7 +3,7 @@
 </div>
 <div class="header">
     <div class="subTitle">
-        <div class="block">Welcome to the HL7 CIMI Reference Model Documentation Version 0.0.4 generated on ${timestamp}.</div>
+        <div class="block">Welcome to the HL7 CIMI Reference Model Documentation Version 0.0.6 generated on ${timestamp}.</div>
     </div>
     <p>Please click <a href="overview.html">here</a> for a high level UML view of the core model.</p>
     <p>Please click <a href="CIMIArchitectureGuide/CIMIArchitectureGuide.html">here</a> to view the CIMI Architecture Guide</p>
