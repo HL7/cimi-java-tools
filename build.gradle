@@ -1,0 +1,33 @@
+group = "org.hl7.cimi"
+version = "1.0-SNAPSHOT"
+
+description = """"""
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+        apply plugin: 'java'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.3.1'
+}
+
+task hello {
+    //group 'vogella'
+    description 'The hello task greets Gradle by saying "Hello Gradle"'
+
+    doFirst {
+        println 'Hello Gradle'
+    }
+    doLast {
+        println 'Bye bye Gradle'
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
